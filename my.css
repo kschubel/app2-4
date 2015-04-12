@@ -1,0 +1,181 @@
+/*---Content Area, 1100 pixels wide---*/ 
+.innerBox{
+  float:left;
+  margin-left:330px;
+  width:1100px;
+  padding-left:75px;
+}
+
+
+/*---images---*/
+  .plate{
+position:absolute;
+top:145px;
+left:212px;
+z-index:-2;
+}
+
+.card{
+position:absolute;
+top:-90px;
+left:650px;
+z-index:-2;
+}
+
+.napkin{
+position:absolute;
+top:200px;
+left:990px;
+z-index:-2;
+}
+
+.mango{
+position:absolute;
+top:300px;
+left:1100px;
+z-index:-2;
+}
+
+.doily{
+position:absolute;
+top:95px;
+left:118px;
+z-index:-2;
+}
+
+/*--------*/ 
+
+body{
+background-image: url('woodColor.jpg');
+width:1100px;
+}
+
+<!-- paragraph text-->
+
+.topBox { 
+  position:relative;
+  left: 390px;
+  top:-670px;
+  height: 100px; 
+  width: 300px; 
+  list-style-type: none;  
+   text-decoration: none;
+} 
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(17deg);
+
+/* Firefox */
+-moz-transform: rotate(17deg);
+
+/* IE */
+-ms-transform: rotate(17deg);
+
+/* Opera */
+-o-transform: rotate(17deg);
+
+}
+
+
+.homeLink{
+   position:relative; 
+   margin-left:350px;
+   font-family: 'Sakkal Majalla', cursive; 
+   font-size: 30px; 
+   list-style-type: none;  
+   text-decoration: none;
+   color:#81802e;
+} 
+
+/*---set the font and location of the menu list---*/ 
+.menu{ 
+   position:relative;
+  margin-left:400px;
+   font-family: 'Permanent Marker', cursive; 
+   font-size: 25px; 
+   list-style-type: none;  
+   text-decoration: none;
+  
+   
+} 
+
+/*-------------Menu Rules-------------*/
+.original a:link { 
+color:#d7611a; 
+text-decoration:none; 
+} 
+ 
+.original a:hover{ 
+color:#d7611a; 
+text-decoration:none; 
+} 
+ 
+.original a:active{ 
+color:#d7611a; 
+text-decoration:none; 
+} 
+ 
+.original a:visited { 
+color:#d7611a; 
+text-decoration:none; 
+} 
+
+/*-------------Clicked on/Visiting Rules-------------*/
+
+.green a:link{
+color:#d7611a; 
+text-decoration:none; 
+}
+ 
+.green a:hover{ 
+color:#d7611a; 
+text-decoration:none; 
+} 
+ 
+.green a:active{ 
+color:#d7611a; 
+text-decoration:none; 
+} 
+ 
+.green a:visited { 
+color:#d7611a; 
+text-decoration:none; 
+} 
+
+.positionD{
+  margin-top:28px;
+  margin-left:378px;
+  list-style-type: none;  
+   text-decoration: none;
+}
+
+
+.rotateS {
+
+margin-top:-50px;
+/* Safari */
+-webkit-transform: rotate(-1deg);
+
+/* Firefox */
+-moz-transform: rotate(-1deg);
+
+/* IE */
+-ms-transform: rotate(-1deg);
+
+/* Opera */
+-o-transform: rotate(-1deg);
+
+}
+
+<!-- get rid of blue box outline from js-->
+.btnd:active,
+.btnd:focus,
+.btnd.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+

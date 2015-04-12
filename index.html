@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+	<head>
+        
+
+<!--js for hover effect--> 
+        
+        <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+        </script>
+
+        
+        
+		<title>Coca-Cola API</title>
+        
+        <!--Google Fonts-->
+<link rel="stylesheet" type="text/css" 
+      href="http://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt|Sakkal+Majalla"> 
+        
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src='my.js'></script>
+        
+        <!--external css-->
+        <link rel="stylesheet" href="my.css">
+        
+        <!--internal css-->
+        <style type="text/css"> 
+
+        /*header text is green text inside plate*/
+        .headerText{
+                position:absolute;
+                text-align:center;
+                top:400px;
+                left:420px;
+                height:100px;
+                width:400px;
+                color:#81802e;
+                font-family: 'Rock Salt', cursive;
+                font-size: 20px; 
+        }
+            
+        /*jsBox is green text associated with cokeData*/    
+        .jsBox{
+                float:left;
+                margin-top: 525px; 
+                margin-left:75px;
+                font-family: 'Permanent Marker', cursive;
+                font-size: 50px;
+                text-align:center;
+                color:#81802e;
+            
+   
+        }
+            
+        </style>
+     </head>
+    
+    
+    <!--load hover effect on body-->
+	<body onLoad="MM_preloadImages('empty10.png', 'squiggle10.png' )"> 
+		
+		
+        
+<main>
+		
+     <div class="innerBox">
+   
+     <!--images-->
+     <div class="doily"> <img src ="doily.png" /> </div>
+     <div class="plate"> <img src ="plate.png" /> </div> 
+     <div class="mango"> <img src ="mango.png" /> </div>  
+     <div class="card"> <img src ="card.png" /> </div> 
+         
+     <div class ="headerText"> <p>How many ways does Coca-Cola package the same product?</p></div>
+    
+    <!--drop down menu-->
+        <div class="jsBox">     
+        <form action="../">
+        <select onchange="searchCoke(this.options[this.selectedIndex].value)">
+        <option value="">Choose a Coca-Cola Mango Drink!</option>
+        <option value="*D*T*Mango*">Diet Mango</option>
+        <option value="*Orange Mango*">Orange Mango</option>
+        <option value="*Apple Mango*">Apple Mango</option>
+        <option value="*Mango Mandarin*">Mango Mandarin</option>
+        <option value="*Mango Melon*">Mango Melon</option>
+        <option value="*Fanta Mango*">Fanta Mango</option>
+        </select>
+        </form>
+        
+        <cokeData></cokeData>
+                    
+        </div><!--jsBox end div-->
+         
+         <div class="topBox"> 
+            <div class="rotate"> 
+                <div class="homeLink"> 
+                    <ul> 
+                    <div class="original"> <p>click here to locate the</p></div>
+                    </ul>
+                </div>
+          
+        <div class="menu"> 
+            <div class="green"><a href="http://www.cokecce.com/">Coca-Cola API</a></div>
+        </div>
+
+            <div class="positionD">
+                <div class="rotateS">
+                    <a href="http://www.cokecce.com/" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('squiggle 10','','squiggle10.png',1)"><img src="empty10.png" alt="squiggle" width="200" height="50" id="squiggle 10"></a> <!--side page squiggle-->
+                </div>  
+          </div>
+        
+            </div> 
+         </div> 
+        
+        <!--end card box with link-->
+         
+        </main>
+        
+		
+	</body>
+</html>
